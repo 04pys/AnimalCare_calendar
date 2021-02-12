@@ -1,0 +1,81 @@
+.accordion {
+    margin:0 auto;
+    font-size:14px;
+    width:80%;
+
+    background:#fff;
+}
+.accordion ul {
+    list-style:none;
+    margin:0;
+    padding:0;    
+}
+.accordion li {
+    margin:0;
+    padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+    display:none;
+}
+.not_border {
+    border-bottom:0px solid #ffffff !important;
+}
+.not_border:hover {
+    border-bottom:0px solid #aaa !important;
+}
+.accordion label {
+    display:block;
+    line-height:23px;
+    color:#333;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:0 1px 0 rgba(255,255,255,.5);
+    border-bottom:1px solid #aaa;
+}
+.accordion ul li label {
+    color: hsl(222, 25%, 14%);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+    transform: translateX(4px);
+    color: rgba(180, 35, 35, 0.8);
+}
+.accordion .content {
+    padding:0 10px;
+    overflow:scroll;
+    border:1px solid #fff; /* Make the border match the background so it fades in nicely */
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+}
+.accordion p {
+    color:#333;
+    margin:0 0 10px;
+}
+.accordion h3 {
+    color:#542437;
+    padding:0;
+    margin:10px 0;
+}
+
+
+/* Vertical */
+.vertical ul li {
+    overflow:hidden;
+    margin:0 0 1px;
+}
+.vertical ul li label {
+    padding:5px;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+
+}
+
+.vertical ul li .content {
+    height:0px;
+    border-top:0;
+}
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+    height:600px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'NanumSquare';
+  src: url(../font/NanumSquare_acL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NanumSquare_Bold';
+  src: url(../font/NanumSquare_acB.ttf) format('truetype');
+}
+
+.aaaa {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: NanumSquare;
+}
+.applepie {
+    height: 100%;
+    background-color: rgba(180, 35, 35, 0.8);
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-shadow: 0 .05rem .5rem rgba(0, 0, 0, .5);
+}
+
+.group_photo {
+  height: 50vh;
+  background: url(../img/appplepi_group.png) 100%/cover no-repeat;
+  background-color: whitesmoke;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .5);
+  border-radius: 2.5px;
+  padding: 30px 15px;
+}
+
+.text {
+  color: #000;
+}
+
+.poster {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.soft-curriculem {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(180, 35, 35, 0.8);
+}
+
+.award {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(180, 35, 35, 0.8);
+  overflow: auto;
+}
+
+.output {
+  height: 100%;
+  background-color: #777;
+}
+
+.aw {
+  max-height:85vh;
+}
+
+.content-curriculem {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(180, 35, 35, 0.8);
+}
+
+.curriculem-box {
+  background-color: whitesmoke;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .5);
+  border-radius: 2.5px;
+  padding: 30px 15px;
+}
+.award-box {
+  background-color: whitesmoke;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .5);
+  border-radius: 2.5px;
+  padding: 30px 15px;
+}
+
+.temp {
+  height: 100%;
+  background-color: rgba(180, 35, 35, 0.8);
+}
+
+@font-face {
+  font-family: 'Harlow';
+  src: url("../resource/HARLOWSI.TTF") format('truetype');
+}
+
+.applefont {
+  font-family: Harlow;
+}
+
+.people_index {
+  background-color:#e54352; font-weight:500; font-size:12px; padding:5px; border-radius:15px; margin-right:5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+
+.carousel-item {
+  height: 100vh;
+  background-color: #777;
+  text-shadow: 0 0.05rem 0.5rem black;
+}
+
+  .carousel-item > img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    font-size:5rem;
+    color: white;
+    text-align: center;
+  }  
+  .dark {
+    filter: brightness(90%);
+  }
+
+.carousel-control-next {
+  position: absolute;
+  z-index: 1000;
+}
+
+#video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+   background-color: black; /* in case the video doesn't fit the whole page*/
+    background-image: /* our video */;
+    background-position: center center;
+    background-size: contain;
+     object-fit: cover; /*cover video background */
+     z-index:3;
+}
+
+#section0 .layer{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  /*
+  * Preventing flicker on some browsers
+  * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+  */
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0{
+  overflow: hidden;
+}
+
+/* fadein */
+.fadein {
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s; /* Firefox */
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+  -o-animation: fadein 1.5s; /* Opera */
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Grow Rotate */
+.grow_rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.grow_rotate:hover, .grow_rotate:focus, .grow_rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
